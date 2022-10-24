@@ -3,7 +3,9 @@
         {
             "name": "Mac",
             "includePath": [
-                "${default}"
+                "${default}",
+                "/Users/fuyuki/Documents/Arduino/libraries/**",
+                "../"
             ],
             "defines": [],
             "macFrameworkPath": [],
