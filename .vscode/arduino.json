@@ -1,5 +1,6 @@
 {
     "configuration": "Core=Main,Memory=768,Debug=Disabled,UploadSpeed=115200",
     "board": "SPRESENSE:spresense:spresense",
-    "programmer": "SPRESENSE:sfutools"
+    "programmer": "SPRESENSE:sfutools",
+    "port": "/dev/tty.usbserial-14140"
 }
