@@ -43,30 +43,33 @@ void setup() {
 
   // Set WiFi to station mode and disconnect from an AP if it was Previously
   // connected
-  WiFi.mode(WIFI_STA);
-  WiFi.disconnect();
+  WiFi.mode(WIFI_STA);//wifi mode ->
+  WiFi.disconnect();// wifi disconnect ->
   delay(100);
 
   // Attempt to connect to Wifi network:
   Serial.print("Connecting Wifi: ");
   Serial.println(ssid);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
+  WiFi.begin(ssid, password);//wifi begin->
+  while (WiFi.status() != WL_CONNECTED) { //while wifi not connected->
     Serial.print(".");
     delay(500);
   }
   Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
-  IPAddress ip = WiFi.localIP();
+  IPAddress ip = WiFi.localIP(); // IP get->
   Serial.println(ip);
 
-  checkGoogleMaps();
+  checkGoogleMaps();//line 67~
 }
 
 void checkGoogleMaps() {
   Serial.println("Getting traffic for " + origin + " to " + destination);
-    String responseString = api.distanceMatrix(origin, destination, departureTime, trafficModel);
+    String responseString = api.distanceMatrix(origin, destination, departureTime, trafficModel); // GoogleMapsApi.cpp line 80
+    // get request to google map and received the response
+    
+    
     DynamicJsonBuffer jsonBuffer;
     JsonObject& response = jsonBuffer.parseObject(responseString);
     if (response.success()) {

@@ -18,9 +18,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 
 #include "GoogleMapsApi.h"
 
-GoogleMapsApi::GoogleMapsApi(String apiKey, Client &client) {
+GoogleMapsApi::GoogleMapsApi(String apiKey) { //delete (Client &client)
   _apiKey = apiKey;
-  this->client = &client;
+  //this->client = &client;
 }
 
 String GoogleMapsApi::sendGetToGoogleMaps(String command) {
