@@ -1,10 +1,30 @@
 #ifndef NewClient_h
 #define NewClient_h
 
+#include <ArduinoJson.h>
+#include <Arduino.h>
+
+class Client {
+    private:
+
+    public:
+
+    bool connect(String HOST, int PORT);
+    
+    void println(String command);
+
+    bool available();
+
+    char read();
+
+};
+
+
+
 /*
 this client source need these function
 
-boolean lient->connect(HOST, SSL_PORT) 
+boolean client->connect(HOST, SSL_PORT) 
 >> when connect the host return true
 
 void client->println(string);
