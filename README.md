@@ -15,3 +15,5 @@
 [Arduino Reference: GoogleMapAPI]<https://www.arduino.cc/reference/en/libraries/googlemapsapi/>
 
 [jsonをストリーミングするために必要なやつ]<https://github.com/squix78/json-streaming-parser>
+
+10/25: create clientで作業中
