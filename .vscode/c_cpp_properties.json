@@ -6,7 +6,8 @@
                 "${default}",
                 "/Users/fuyuki/Documents/Arduino/libraries/**",
                 "/Users/fuyuki/Documents/Arduino/libraries",
-                "../**"
+                "../**", 
+                "./"
                 
             ],
             "defines": [],
